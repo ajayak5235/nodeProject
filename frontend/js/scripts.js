@@ -1,5 +1,4 @@
-// API URLs
-// API URLs
+
 const FETCH_TICKERS_URL = "http://localhost:3000/api/tickers/fetch";
 const GET_TICKERS_URL = "http://localhost:3000/api/tickers";
 
@@ -24,7 +23,7 @@ async function fetchAndDisplayTickers() {
     let tickers = await response.json();
 
     // Limit to the first 10 entries
-    tickers = tickers.slice(0, 10); // Get only the first 10 entries
+    tickers = tickers.slice(0, 10);
     if (tickers.length > 0) {
         const firstTickerLast = tickers[0].last;
         const averagePriceDiv = document.querySelector(".average-price");
@@ -33,11 +32,11 @@ async function fetchAndDisplayTickers() {
 
     // Populate the table
     const tableBody = document.querySelector("#table-body");
-    tableBody.innerHTML = ""; // Clear existing data
+    tableBody.innerHTML = "";
 
     tickers.forEach((ticker, index) => {
-        const row = document.createElement("tr"); // Use "div" instead of "tr" for grid layout
-        row.className = "table-row"; // Add the class for consistent styling
+        const row = document.createElement("tr"); 
+        row.className = "table-row";
         row.innerHTML = `
           <div>${index + 1}</div>
           <div>${ticker.name}</div>
