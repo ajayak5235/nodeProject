@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HODLINFO</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">HODLINFO</div>
+    <div class="header-right">
+        <select id="currency">
+            <option>INR</option>
+          </select>
+          <select id="crypto">
+            <option>BTC</option>
+          </select>
+          <div class="buybtc">BUY BTC</div>
+    </div>
+    <div class="header-right">
+      
+      <div class="counter">10</div>
+      <button class="telegram-button">Connect Telegram</button>
+      <label class="toggle-switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat-item">
+      <div class="stat-value">0.1 %</div>
+      <div class="stat-label">5 Mins</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value">0.96 %</div>
+      <div class="stat-label">1 Hour</div>
+    </div>
+    <div class="stat-item">
+      <div class="average-price">₹ 26,56,110</div>
+      <div class="stat-label">Average BTC/INR net price including commission</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value">2.73 %</div>
+      <div class="stat-label">1 Day</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value">7.51 %</div>
+      <div class="stat-label">7 Days</div>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <div class="table-header">
+      <div>#</div>
+      <div>Name</div>
+      <div>Last</div>
+      <div>Buy</div>
+      <div>Sell</div>
+      <div>Volume</div>
+      <div>Base Unit</div>
+    </div>
+    <div id="table-body">
+      <!-- Data will be inserted here by JavaScript -->
+    </div>
+  </div>
+
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
